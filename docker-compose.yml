@@ -1,0 +1,11 @@
+services:
+  gtest:
+    build:
+      context: ./CPP  # Fixed path (relative to exercise3.0)
+      dockerfile: Dockerfile
+  
+  python:
+    build:
+      context: ./exercise3.1  # Move up a directory to access exercise3.1
+      dockerfile: Dockerfile
+
